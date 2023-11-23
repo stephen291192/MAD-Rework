@@ -23,7 +23,7 @@ import { AiFillStar } from "react-icons/ai";
 import { TiArrowRight } from "react-icons/ti";
 import { MdOutlinePrecisionManufacturing } from "react-icons/md";
 import { TbBuildingFactory2,TbBuildingFactory} from "react-icons/tb";
-
+import TestimonialSlider from "./testimonial/page";
 
 const HomePage = () => {
   const StarIcon = () => (
@@ -193,24 +193,31 @@ const HomePage = () => {
 
   const testimonials = [
     {
-      name: "John Doe",
-      role: "CEO",
-      feedback:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      logo : 'https://images.prismic.io/vueai/61c50e48-fe3b-4345-b550-74f55a5c757e_585990234f6ae202fedf28cf+2.png?auto=compress%2Cformat&fit=max&w=256',
+      name: 'John Doe',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     },
     {
-      name: "Jane Smith",
-      role: "Designer",
-      feedback:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      logo : 'https://images.prismic.io/vueai/0ef74d0e-bb1d-457e-a6ea-4a0dde7f2d6f_tata-motors-logo-3+2.png?auto=compress%2Cformat&fit=max&w=256',
+     
+      name: 'Jane Doe',
+      content: 'Sed do eiusmod tempor incididunt ut labore Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     },
     {
-      name: "Jane Smith",
-      role: "Designer",
-      feedback:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      logo : 'https://images.prismic.io/vueai/61c50e48-fe3b-4345-b550-74f55a5c757e_585990234f6ae202fedf28cf+2.png?auto=compress%2Cformat&fit=max&w=256',
+     
+      name: 'Alice Smith',
+      content: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    },
+    {
+      logo : 'https://images.prismic.io/vueai/61c50e48-fe3b-4345-b550-74f55a5c757e_585990234f6ae202fedf28cf+2.png?auto=compress%2Cformat&fit=max&w=256',
+     
+      name: 'Alice Smith',
+      content: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     },
   ];
+
+
 
   const Box = ({ icon, title, content }) => {
     return (
@@ -221,6 +228,7 @@ const HomePage = () => {
       </div>
     );
   };
+
   return (
     <>
     {/* SEO Section */}
@@ -385,7 +393,7 @@ const HomePage = () => {
         </div>
         <br /> <br />
       </div>
-
+      
       {/* Featiure section 02 */}
       <div className="bg-black py-24 sm:py-10">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -557,10 +565,16 @@ const HomePage = () => {
       {/* slider */}
       <div className="bg-gray-200 py-24 sm:py-20 mx-auto lg:text-center">
         <div className="max-w-5xl mC">
-          <LogoContentCarousel />
+          {/* <LogoContentCarousel /> */}
+
+          <TestimonialSlider testimonials={testimonials} />
         </div>
       </div>
 
+          {/* <div className="container mx-auto mt-8">
+          <h2 className="text-2xl font-bold mb-4">Testimonials</h2>
+          <TestimonialSlider testimonials={testimonials} />
+        </div> */}
      
 
       {/* Footer Top section */}

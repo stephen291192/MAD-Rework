@@ -12,6 +12,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Lora', sans-serif;
   /* Add any additional styling you want for headings */
 }
+.slick-slide {
+  margin-right: 0px; /* Adjust the value according to your preference */
+}
 body{
   font-family: ' Open Sans', sans-serif !important;
   /* Add any additional styling you want for the body/content */
