@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', sans-serif;
+  /* Add any additional styling you want for headings */
+}
+body{
+  font-family: ' Open Sans', sans-serif !important;
+  /* Add any additional styling you want for the body/content */
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.btnRe{
+  position: relative;
+  right: 110px;
+  padding: 10px 15px;
+  margin: 5px;
+  background: black;
+  border-radius: 50px;
+}
+.btnhe {
+  height: 35px !important;
+  padding: 0px 17px;
+  margin-right: -8px;
+}
+.Fbg{
+  background-color: #2a323a;
+}
+.btn{
+  padding: 5px 15px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50px;
+  border: 1px solid rgb(0, 0, 0);
+  color: #fff;
+  font-size:13px;
+}
+.btncall {
+  padding: 10px 30px;
+  background-color: #94aec4;
+  border-radius: 50px;
+  border: 1px solid #94aec4;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+.btncall:hover{
+  background-color: rgb(30 66 145 / 73%);
+}
+.btnFooter {
+  padding: 8px 17px;
+  margin-top: 10px;
+  font-weight: 600;
+  background-color: #77736f3d;
+  border: 1px solid #77736f2c;
+  border-radius: 50px;
+  
+  color: #fff;
+  font-size: 10px;
+}
+
+.btnFooter:hover
+{
+  background-color: #2c353dd0;
+  border: 1px solid #2c353de6;
+  
+}
+.btnFooterVi{
+  padding: 7px 15px;
+  margin-top: 10px;
+  background-color: rgb(131, 134, 139);
+  border-radius: 50px;
+  border: 1px solid  rgb(107 114 128);
+  color: #1c14a8;
+  font-size: 13px;
+  
+}
+.logo{
+  font-size: 24px;
+  font-weight: 800;
+}
+.Newsletter{
+  position: relative;
+  top:30px;
+  margin: 0 auto;
+}
+.mC{
+  margin: 0 auto;
+}
+.cardbg{
+   background-color: #77736f2c;
+ 
+}
+.cardbg:hover{
+  background-color: #77736f59;
+ 
+}
+
+
+.textcolor{
+color: #c6c6c6;
+text-align: center;
+}
+.imagemax{
+width: 50px;
+margin: 0 auto;
+padding-bottom: 10px;
+}
+.iframClas{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  /* padding: 10px; */
+  color: #2d2727 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.zindex{
+  z-index: 9999 !important;
+}
+
+.ring-gray-900\/5 {
+  --tw-ring-color: rgb(17 24 39 / 0.05);
+
+  z-index: 9999;
+}
+/* .slick-prev:before {
+ position: relative;
+  left: -50px !important;
+}
+.slick-next:before{
+  position: relative;
+  right: -50px !important;
+} */
+
+/* .box{
+  padding: 20px;
+  border: 1px solid red;
+  margin: 10px;
+  gap: 100px;
+  display: flex;position: relative;
+} */
+
+.height{
+  height: 700px;
+}
+.widthbox{
+width:1200px;
+}
+
+.pricebox:hover{
+background-color:#f0f8ff;
+padding: 50px;
+}
+
+.btnH {
+  padding: 10px 30px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50px;
+  border: 1px solid rgb(0, 0, 0);
+  color: #fff;
+  font-size: 14px;
+}
+.imgMax{
+  width: 75%;
+}
+.imagemaxIcon {
+  width: 60px;
+  margin: 0 auto;
+  padding: 15px;
+
+}
+.imagemaxIconbg1{
+  background-color:#ff664f;
+}
+.imagemaxIconbg2{
+  background-color:#59a0d2;
+}
+.imagemaxIconbg3{
+  background-color:#59ddc3;
+}
+.imgSize{
+  width: 50%;
+}
+
+
+
